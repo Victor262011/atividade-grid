@@ -459,3 +459,25 @@ button:hover {
    ============================================= */
 
 /* ESCREVA SEU CODIGO AQUI */
+@media (max-width: 768px) {
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-principal {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
