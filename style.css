@@ -57,7 +57,9 @@ button:hover {
 .header {
     background-color: #1a1a2e;
     padding: 15px 40px;
-    /* ESCREVA SEU CODIGO AQUI */
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
 
 .logo {
@@ -81,7 +83,6 @@ button:hover {
     color: #6c63ff;
 }
 
-
 /* =============================================
    QUESTAO 2 - BANNER
 
@@ -99,7 +100,8 @@ button:hover {
     padding: 80px 20px;
     text-align: center;
     min-height: 300px;
-    /* ESCREVA SEU CODIGO AQUI */
+    display: grid;
+    place-items: center;
 }
 
 .banner h1 {
