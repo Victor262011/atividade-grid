@@ -332,13 +332,19 @@ body {
 .prato-card {
     flex: 1 1 calc(33.333% - 17px);
     min-width: 280px;
-    /* ESCREVA SEU CODIGO AQUI */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
 }
 
 .prato-img {
     color: white;
     font-size: 1rem;
-    /* ESCREVA SEU CODIGO AQUI */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .prato-info {
@@ -389,7 +395,32 @@ body {
    ============================================= */
 
 /* ESCREVA SEU CODIGO AQUI */
+.diferencial-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.diferencial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(230,126,34,0.15);
+}
+
+.prato-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prato-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.btn-primario {
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-primario:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
 /* =============================================
    QUESTAO 7 - PSEUDO-ELEMENTOS (::before / ::after)
@@ -415,7 +446,29 @@ body {
    ============================================= */
 
 /* ESCREVA SEU CODIGO AQUI */
+.secao-titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e67e22;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
 
+.depoimento-card {
+    position: relative;
+}
+
+.depoimento-card::before {
+    content: "\201C";
+    font-size: 4rem;
+    color: #e67e22;
+    opacity: 0.2;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
 
 /* =============================================
    QUESTAO 8 - POSITION (RELATIVE / ABSOLUTE)
@@ -440,7 +493,14 @@ body {
    ============================================= */
 
 .prato-tag {
-    /* ESCREVA SEU CODIGO AQUI */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }
 
 .depoimentos {
@@ -476,7 +536,16 @@ body {
 }
 
 .autor-avatar {
-    /* ESCREVA SEU CODIGO AQUI */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e67e22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .autor-info {
@@ -514,7 +583,19 @@ body {
    ============================================= */
 
 /* ESCREVA SEU CODIGO AQUI */
+.prato-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
+.depoimento-texto {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 /* =============================================
    QUESTAO 10 - RESPONSIVIDADE COM MEDIA QUERIES
